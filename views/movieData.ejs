@@ -1,0 +1,22 @@
+
+
+<html>
+        <body style="padding: 4%; margin-left: 36%;">
+            
+            <u><h1>Movie Data Page</h1></u>
+    
+            <b>ID :</b> <%= movie.id %> <br/>
+            <b>Name :</b> <%= movie.name %> <br/>
+            <b>Genres :</b> <%= movie.genres %> <br/> <br/>
+            <b>Language :</b> <%= movie.language %> <br/> <br/>
+
+            <% if("image" in movie) { %>
+                <b>Picture :</b> <br/><br/>
+                <img src="<%= movie.image.medium %>">
+            <% } %>  <br/> <br/>
+
+            <a href="/menu/searchMovies/searchResults">Back</a> <br>
+            <a href="/menu">Back to Menu</a>
+    
+        </body>
+    </html>

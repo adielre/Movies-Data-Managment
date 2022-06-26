@@ -1,0 +1,31 @@
+
+
+
+
+<html>
+        <body style="padding: 4%;">
+            
+            <u ><h1>User Data Page</h1></u>
+            
+            <% if(params.action == "update") { %>
+                <form action="/menu/usersManagement/userData/getdata" method="POST">
+                    <b>Username :</b> <input type="text" name="username" value='<%=user.username%>'><br/><br/>
+                    <b>Password :</b> <input type="text" name="pwd" value='<%=user.pwd%>'><br/><br/>
+                   
+                    <input type="submit" value="Update">
+                </form>
+            <% } %>
+
+
+            <% if(params.action == "addNew") { %>
+                <form action="/menu/usersManagement/userData/getdata" method="POST">
+                    <b>Username :</b> <input type="text" name="username" ><br/><br/>
+                    <b>Password :</b> <input type="text" name="pwd"><br/><br/>
+                   
+                    <input type="submit" value="Save">
+                </form>
+            <% } %>
+
+
+        </body>
+    </html> 

@@ -1,0 +1,45 @@
+
+
+
+
+
+<html>
+    <body style="text-align: center; padding: 4%;">
+        
+        <u><h1>Search Movies Page</h1></u>
+
+        <form action="/menu/searchMovies/searchResults" method="POST">
+            <b>Name :</b> <input type="text" name="name"><br/><br/>
+
+            <b>Genre :</b>
+            <select name="genres">
+                <% genres.forEach(function(genre) { %>
+                
+                    <option value="<%= genre %>"><%= genre %></option>
+        
+                <% }) %>
+            </select> <br><br>
+           
+            
+            <b>Language :</b>
+            <select name="language">
+                <% languages.forEach(function(Language) { %>
+                
+                    <option value="<%= Language %>"><%= Language %></option>
+        
+                <% }) %>
+            </select>
+              
+            <br/><br/>
+
+            <input type="submit" value="Search"> <br><br>
+
+            <% if(msg != '') { %>
+                <div style="color: red;"><%= msg %></div> <br>
+            <% } %>  
+
+            <a href="/menu">Back to menu page</a>
+        </form>
+
+    </body>
+</html>

@@ -1,0 +1,28 @@
+
+
+<html>
+    <body style="padding: 4%; margin-left: 36%;">
+        
+        <u><h1>Create New Movie Page</h1></u>
+
+        <form action="/menu/createNewMovie/getdata" method="POST">
+            <b>Name :</b> <input type="text" name="movieName"><br/><br/>
+            <b>Language :</b> <input type="text" name="movieLanguage"><br/><br/>
+           
+
+            <b>Genres :</b> <br>
+            <div style="margin-left: 60px;">
+                <% genres.forEach(function(genre) { %>
+                
+                    <input type="checkbox" name="<%= genre %>"> <%= genre %> <br>
+        
+                <% }) %>
+            </div>
+            
+            <br/><br/>
+
+            <input type="submit" value="Send">
+        </form>
+
+    </body>
+</html>

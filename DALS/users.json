@@ -1,0 +1,5 @@
+{"users":[{"id":1,"username":"adiel_reuven","pwd":"4321","CreatedDate":"","NumOfTransactions":"NO LIMIT","role":"Admin"},
+    
+    {"id":4,"username":"yosi2","pwd":"123","CreatedDate":"null","NumOfTransactions":"3","role":"null"},
+    
+    {"id":5,"username":"david","pwd":"123","CreatedDate":"null","NumOfTransactions":"3","role":"null"}]}

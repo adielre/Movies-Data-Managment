@@ -1,0 +1,18 @@
+
+
+
+<html>
+    <body style="text-align: center; padding: 4%;">
+        
+        <u><h1>Menu</h1></u>
+        
+        <b><a href="/menu/searchMovies">Search for movies</a> <br>
+        <a href="/menu/createNewMovie">Create new movie</a> <br>
+
+        <% if(roleUser == 'Admin') { %>
+            <a href="/menu/usersManagement">Edit users</a> <br><br>
+        <% } %></b>
+        
+
+    </body>
+</html>
